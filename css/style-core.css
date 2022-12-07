@@ -8579,7 +8579,7 @@ body {
 
 @media only screen and (max-width: 767px) {
     #gdlr-core-wrapper-1.gdlr-core-pbf-wrapper {
-       /* padding-top: 80px !important;*/
+        padding-top: 80px !important;
     }
 }
 @media only screen and (max-width: 999px) {
@@ -9249,4 +9249,39 @@ video {
     line-height: 20px;
   }
 }
+
+
+
+.line {
+  width: 100%;
+  height: 4rem;
+  overflow: hidden;
+  border: 1px solid black;
+  padding: 0;
+  margin-bottom: 16px;
+  perspective: 500px;
+}
+
+/* lineup class and keyframes */
+.lineUp {
+  animation: 10s anim-lineUp ease-out infinite;
+}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
 
